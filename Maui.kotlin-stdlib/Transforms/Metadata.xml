@@ -1,0 +1,58 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<!-- StringsKt: CharSequence/String overload collisions -->
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='drop' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">DropCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='dropLast' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">DropLastCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='padEnd' and count(parameter)=3 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">PadEndCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='padStart' and count(parameter)=3 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">PadStartCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='removePrefix' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">RemovePrefixCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='removeSuffix' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">RemoveSuffixCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='removeSurrounding' and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">RemoveSurroundingCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='take' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">TakeCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='takeLast' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">TakeLastCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='trim' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">TrimCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='trimEnd' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">TrimEndCharSequence</attr>
+
+	<attr
+		path="/api/package[@name='kotlin.text']/class[@name='StringsKt']/method[@name='trimStart' and count(parameter)=2 and parameter[1][@type='java.lang.CharSequence']]"
+		name="managedName">TrimStartCharSequence</attr>
+</metadata>

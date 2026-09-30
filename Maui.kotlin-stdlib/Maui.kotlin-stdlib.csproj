@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<TargetFramework>net8.0-android34.0</TargetFramework>
+    
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+	
+    <RootNamespace>Maui.kotlin_stdlib</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<CheckEolWorkloads>false</CheckEolWorkloads>
+
+    <IsTrimmable>true</IsTrimmable>
+	  
+	<Authors>Denis Gudiel</Authors>
+	<Description>Android links for .NET MAUI based on the Java library org.jetbrains.kotlin:kotlin-stdlib. Compatible with .NET 8 or later</Description>
+	<PackageIcon>icon.png</PackageIcon>
+	<Version>1.0.0</Version>
+	<PackageLicenseExpression>MIT AND Apache-2.0</PackageLicenseExpression>
+	<PackageTags>artifact=org.jetbrains.kotlin:kotlin-stdlib:1.0.0</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+	 <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Update="@(ProjectReference-&gt;WithMetadataValue('Filename', 'Maui.kotlin-stdlib'))">
+		<JavaArtifact>org.jetbrains.kotlin:kotlin-stdlib:1.0.0</JavaArtifact>
+	</ProjectReference>
+  </ItemGroup>
+
+  <!--<ItemGroup>
+	   <AndroidLibrary Include="Jars\kotlin-stdlib-1.0.0.jar" Bind="true" Pack="true" />
+  </ItemGroup>-->
+
+	<!--<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageOutputPath>D:\nuget-packages</PackageOutputPath>
+	</PropertyGroup>-->
+</Project>
