@@ -14,9 +14,9 @@
 	<Authors>Denis Gudiel</Authors>
 	<Description>Android links for .NET MAUI based on the Java library org.jetbrains.kotlin:kotlin-stdlib. Compatible with .NET 8 or later</Description>
 	<PackageIcon>icon.png</PackageIcon>
-	<Version>1.0.0</Version>
+	<Version>1.0.1</Version>
 	<PackageLicenseExpression>MIT AND Apache-2.0</PackageLicenseExpression>
-	<PackageTags>artifact=org.jetbrains.kotlin:kotlin-stdlib:1.0.0</PackageTags>
+	<PackageTags>artifact=org.jetbrains.kotlin:kotlin-stdlib:1.0.1</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Update="@(ProjectReference-&gt;WithMetadataValue('Filename', 'Maui.kotlin-stdlib'))">
-		<JavaArtifact>org.jetbrains.kotlin:kotlin-stdlib:1.0.0</JavaArtifact>
+		<JavaArtifact>org.jetbrains.kotlin:kotlin-stdlib:1.0.1</JavaArtifact>
 	</ProjectReference>
   </ItemGroup>
 
